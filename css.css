@@ -68,6 +68,7 @@ body{
     color: var(--main-color);
     display: none;
 }
+/* check point                jrchtjr */
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
@@ -140,7 +141,7 @@ transition: 0.4s ease-in-out;
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .social-icons a:hover{
     color:var(--text-color);
@@ -184,10 +185,11 @@ transition: 0.4s ease-in-out;
     background-color: var(--main-color);
     color: black;
 }
+
 .text-animation{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
+    font-size: 30px;
+    font-weight: 320;
+    min-width: 200px;
 
 }
 .text-animation span{
@@ -198,42 +200,27 @@ transition: 0.4s ease-in-out;
     color: var(--main-color);
     animation: words 20s infinite;
 }
-.text-animation span::after{
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite typing 20s steps(14) infinite;
-}
-@keyframes cursor{
-    to{
-        border-left: 2px solid var(--main-color);
 
-    }
-}
 @keyframes words{
     0%,
     20%{
-        content: 'frontend designer';
+        content: 'Frontend Designer';
     }
     21%,
     40{
-        content:'web designer';
+        content:'Web Designer';
     }
     41%,
     60%{
-        content:'UI/UX designer';
+        content:'UI / UX Designer';
     }
     61%,
     80{
-        content:'web developer';
+        content:'Web Developer';
     }
     81%,
     100%{
-        content:'software tester';
+        content:'Software Tester';
     }
     
 }
@@ -259,10 +246,10 @@ transition: 0.4s ease-in-out;
     65%,
     80%,
     85%{
-        width: calc(100% + 8px);
+        width : calc(100% + 8px);
     }
 }
-/* check point */
+/* check point 222222222222*/
 .heading{
     font-size: 8rem;
     text-align: center;
@@ -282,22 +269,7 @@ transition: 0.4s ease-in-out;
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-    left: calc(50% -1px);
-}
-.timeline-item{
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-}
-.timeline-item:last-child{
-    margin-bottom: 0;
-}
+
 .timeline-item:nth-child(odd){
 padding-right: calc(50% +30px);
 text-align: right;
@@ -305,17 +277,7 @@ text-align: right;
 .timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
 }
-.timeline-dot{
-    height: 21px;
-    width: 21px;
-    background-color: var(--main-color);
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 500x var(--main-color);
-    position: absolute;
-    left: calc(50% -8px);
-    border-radius: 50%;
-    top: 10px;
-}
+
 .timeline-date{
     font-size: 20x;
     font-weight: 800;
@@ -335,7 +297,7 @@ text-align: right;
     transform:scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
-.timeline-contenth3{
+.timeline-content h3{
     font-size: 20px;
     color: white;
     margin: 0 0 10px;
@@ -347,9 +309,10 @@ text-align: right;
     font-weight: 300;
     line-height: 22px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar{
     width: 15px;
 }
+
 ::-webkit-scrollbar-thumb{
     background-color:var(--main-color);
 }
@@ -492,24 +455,7 @@ text-align: right;
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-/* add jjhccccccccccccc*/
-/* .list {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-.list li {
-  margin: 0 10px;
-}
-
-.list a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-} */
 /*add hjvk */
 .kfooter ul{
     margin-top: 0;
@@ -518,26 +464,23 @@ text-align: right;
     line-height: 1.6;
     margin-bottom: 0;
     text-align: center;
-/* }
-.kfoooter ul li a{
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
 }
-.kfoooter ul li a:hover{
-    border-bottom: 3px solid var(--main-color);
+ /* Align items center and initial styles */
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px; /* Initial font size */
+    color: white; /* Text color */
+    padding: 10px 0; /* Padding for better spacing */
+    transition: font-size 0.3s ease-in-out; /* Smooth transition for font size change */
 }
-.kfooter ul li{
-    display: inline-block;
-    padding: 0 15px;
 
+/* Hover effect to increase font size */
+.copyright:hover {
+    font-size: 18px; /* Increased font size on hover */
 }
-.footer .copyright{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-}
+
 /* check pointttttttt footer */
 /* responsiveeeeeeeeeeeeeeeeeeee part
 responsiveeeeeeeeeeeeeeeeeeee part
@@ -635,4 +578,150 @@ responsiveeeeeeeeeeeeeeeeeeee part */
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
-} */
+}
+/* responsive area
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+responsive */
+/* Add these styles at the end of your CSS file */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+      padding: 2rem 5%;
+    }
+    .navbar {
+      display: none;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(0, 0, 0, 0.9);
+      width: 100%;
+      padding: 1rem 5%;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 0 0 10px 10px;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.3s ease-in-out;
+    }
+    .nav-links.active {
+      transform: scaleY(1);
+    }
+    .nav-links a {
+      margin: 1rem 0;
+    }
+    .logo {
+      font-size: 2rem;
+    }
+    #menu-icon {
+      display: block;
+      font-size: 2.5rem;
+    }
+    .home {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .home-content {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .home-content h1 {
+      font-size: 4rem;
+    }
+    .home-img img {
+      width: 70%;
+    }
+    .social-icons a {
+      margin: 2rem 0;
+    }
+    .btn-group {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/* Add these styles at the end of your CSS file */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .heading {
+      font-size: 5rem;
+    }
+    .education {
+      padding: 50px 15px;
+    }
+    .timeline-items {
+      flex-direction: column;
+      align-items: center;
+    }
+    .timeline-item {
+      padding: 0;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+      padding: 0;
+    }
+    .timeline-date {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .timeline-content {
+      padding: 20px;
+      border-radius: 2rem;
+    }
+    .timeline-content h3 {
+      font-size: 18px;
+    }
+    .timeline-content p {
+      font-size: 14px;
+    }
+  }
+/* Add these styles at the end of your CSS file */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .services-container {
+      grid-template-columns: repeat(1, 1fr); /* Change to one column for smaller screens */
+      gap: 2rem; /* Add some gap between service boxes */
+      margin: 0 2rem; /* Adjust margin for better spacing */
+    }
+    .service-info h4 {
+      font-size: 2rem; /* Decrease heading font size */
+    }
+    .service-info p {
+      font-size: 1.4rem; /* Decrease paragraph font size */
+    }
+    .contact form {
+      flex-direction: column; /* Stack form elements vertically */
+      gap: 2rem; /* Add gap between form elements */
+      margin: 3rem auto; /* Adjust margin for better spacing */
+      text-align: left; /* Align form elements to the left */
+    }
+    .contact form .input-box {
+      flex-wrap: wrap; /* Allow input boxes to wrap */
+    }
+    .contact form .input-box input,
+    .contact form textarea {
+      width: calc(100% - 20px); /* Adjust input width to fit container */
+    }
+  }
+      
